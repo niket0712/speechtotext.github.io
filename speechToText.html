@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+	<head>
+	<link href="style.css" rel="stylesheet">
+	<link href="navstyle.css" rel="stylesheet">
+	</head>
+	<body>
+	<nav class="c1">
+<label class="logo">SpeechPad</label>
+</nav>
+<footer class="f1">
+&copy; SpeechPad 2021 -All Rights Reserved 
+</footer>
+	<form>
+	<div id="d1"></div>
+ 		<div>
+		<textarea id="t1" rows=30 cols=100 autofocus ></textarea>
+		</div>
+        <p><div>
+		<button class=b1 type="button" onclick="runSpeechRecognition()">Speech to Text
+		</button> &nbsp; </div>
+		<button class=b2 onclick=saveTextAsFile(t1.value,'speechpad.txt')> Save Notes</button>&nbsp;
+		<input type="reset" value="Clear" class=b3>
+		<span id="action"></span></p>
+        <div id="output" class="hide"></div>
+		<script src=speechtotext.js>
+		</script>
+	</form>
+	</body>
+</html>
